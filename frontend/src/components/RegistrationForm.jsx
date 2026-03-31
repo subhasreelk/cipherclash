@@ -3,7 +3,7 @@ import axios from 'axios'
 import MemberFields from './MemberFields'
 import styles from './RegistrationForm.module.css'
 
-const EMAIL_REGEX = /^[0-9]{2}[a-zA-Z]{1,2}[0-9]{3}@psgtech\.ac\.in$/
+const EMAIL_REGEX = /^[0-9]{2}[a-zA-Z]{1,2}[0-9]{2,3}@psgtech\.ac\.in$/
 const PHONE_REGEX = /^[6-9]\d{9}$/
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '')
 

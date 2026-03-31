@@ -41,7 +41,7 @@ const MemberSchema = new mongoose.Schema({
     trim: true,
     lowercase: true,
     validate: {
-      validator: (v) => /^[0-9]{2}[a-zA-Z]{1,2}[0-9]{3}@psgtech\.ac\.in$/.test(v),
+      validator: (v) => /^[0-9]{2}[a-zA-Z]{1,2}[0-9]{2,3}@psgtech\.ac\.in$/.test(v),
       message: (props) =>
         `${props.value} is not a valid PSG Tech email (e.g. 24z365@psgtech.ac.in)`,
     },
